@@ -5,7 +5,6 @@ def Zadacha_9_1():
     for i in Path('Исходники/').iterdir():
         image = Image.open(str(i))
         image_new = image.filter(ImageFilter.SHARPEN)
-        #image_new.show()
         image_new.save('filters/' + str(i)[-5] + '_filtered.jpg')
 
 
@@ -14,9 +13,9 @@ def Zadacha_9_2():
     from pathlib import Path
     Path('filters/').mkdir(exist_ok=True)
     for i in list(Path('Исходники/').glob('*.jpg')) + list(Path('Исходники/').glob('*.png')):
+
         image = Image.open(str(i))
         image_new = image.filter(ImageFilter.SHARPEN)
-        #image_new.show()
         image_new.save('filters/' + str(i)[-5] + '_filtered.jpg')
 
 
