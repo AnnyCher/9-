@@ -26,7 +26,7 @@ def Zadacha_12_1():
     newIceCreamStand.ice_cream_varieties()
 
 
-#Zadacha_12_1()
+Zadacha_12_1()
 
 
 def Zadacha_12_2():
